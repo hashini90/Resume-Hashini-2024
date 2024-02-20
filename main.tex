@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Hashini Wanniarachchi} \\ \vspace{1pt}
+    8316 Hollow Bend Street, Fort Worth, TX 76123 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 817-706-8675 ~ \href{mailto:Hashinii.wanni@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{hashinii.wanni@gmail.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/hashini-wanniarachchi}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/hashini90}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UT Arlington}{Arlington, Texas}
+      {Bachelor of Science in Industrial Engineering}{}\\ \vspace{5pt}
+      {Doctor of Philosophy in Biomedical Engineering (Medical Imaging)}\\
+      {Dissertation title: "Whole-head functional brain imaging of economic risk decision making and transcranial photo-biomodulation with fNIRS and EEG"}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+%\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+%        \begin{multicols}{4}
+%            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                \item\small Data Structures
+%                \item Software Methodology
+%                \item Algorithms Analysis
+%                \item Database Management
+%                \item Artificial Intelligence
+%                \item Internet Technology
+%                \item Systems Programming
+%                \item Computer Architecture
+%            \end{itemize}
+%        \end{multicols}
+ %       \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {UT Southwestern Medical Center}{March 2021 -- Present}
+      {Post Doctoral Researcher}{Dallas, Texas}
+      \resumeItemListStart
+        \resumeItem{Applied preclinical research methods to oncology testing and imaging mouse tumor models.}
+        \resumeItem{Utilized multispectral optoacoustic imaging (MSOT) and bioluminescence imaging (BLI) for studying tumor progression.}\\
+        \resumeItem{Conducted photoacoustic image data and BLI data analysis using Python and MATLAB.}
+        \resumeItem{Explored ways to visualize using Tableau, and GraphPad to share with teammates }
+        \resumeItem{Supervised and provided leadership for the team in investigating drug experiments and maintaining mice colonies.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UT Arlington}{August 2016 -- February 2021}
+      {Graduate Research Associate}{Arlington, TX}
+      \resumeItemListStart
+        \resumeItem{Utilized Non-invasive imaging modalities (EEG \& fNIRS) to study human behaviors and improve cognition.}
+        \resumeItem{Investigated transcranial photobiomodulation and its underlying mechanisms with EEG \& fNIRS.}
+        \resumeItem{Led, designed, and collected data from EEG \& fNIRS experiments involving over 100 subjects.}
+        \resumeItem{Performed extensive data analysis on EEG and fNIRS data using MATLAB and R}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{ Image Classifier using Pre-trained Models} $|$ \emph{Python, Pre-trained Models: Leveraged ResNet50 \& VGG16}}{March 2023}
+          \resumeItemListStart
+            \resumeItem{Developed code to design a robust image classifier using the VGG16 pre-trained model}
+            \resumeItem{Executed thorough testing procedures on both the ResNet50 and VGG16 models, utilizing a dedicated test set provided in the Jupyter Notebook.}
+            \resumeItem{Generated detailed performance reports for both ResNet50 and VGG16 models based on their test set outcomes.}
+            \resumeItem{Examined the models' predictive capabilities and refined them for optimal results}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{EEG, fNIRS and Photoacoustic Data Analysis } $|$ \emph{MATLAB,EXCEL}}{}
+          \resumeItemListStart
+            \resumeItem{Performed analytics on EEG, and fNIRS data including pre-processing and wavelet transform coherence, and other correlation analysis on MATLAB }
+            \resumeItem{Processed multispectral photoacoustic 2D data to evaluate cancer drug efficacy in preclinical studies }
+            \resumeItem{Utilized multiple data visualization techniques and statistical analyses on GraphPad, Tableau, and R}
+          \resumeItemListEnd 
+          \vspace{-5pt}
+    \resumeSubHeadingListEnd
+%\vspace{-10pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: MATLAB, Python, R, SQL} \\
+      \textbf{Statistics}{: SAS, R, Statview} \\
+       \textbf{Data Visualization}{: Tableau, GraphPad, Fiji} \\
+%     \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+%     \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
+    }}
+ \end{itemize}
+ \vspace{-13pt}
+
+
+%-----------INVOLVEMENT---------------
+%\section{Leadership}
+ %   \resumeSubHeadingListStart
+     %   \resumeSubheading{Texstar Retailers Inc}{August 2014 -- Present}{Personal %Assistant}{}
+     %       \resumeItemListStart
+     %           \resumeItem{Managed sales, employees, and shifts with bookkeeping.}
+     %       \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+
+    
+\section{Publications and Certifications}
+            \resumeItemListStart
+                \resumeItem{Published in Frontiers in Neuroscience, Scientific Reports, Biomedical Optics Express, Neurophotonics, and more}\\
+                \resumeItem{Presented at conferences including BMES, OSA International Biophotonics Congress, SPIE, KCRS, AACR, and WMIC.}\\
+                 \resumeItem{Principles of fMRI 1 \& 2 - Coursera}\\
+                \resumeItem{Google Data Analytics Professional Certificate (Excel, R \& SQL) - Coursera.}\\
+                \resumeItem{IBM Applied AI Professional Certificate - Coursera}
+            \resumeItemListEnd
+
+\end{document}
